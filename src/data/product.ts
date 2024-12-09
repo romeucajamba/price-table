@@ -1,3 +1,5 @@
+import { CreateProduct } from "../interface/product";
+
 export async function getProducts() {
     //delay de 1 seg
     await new Promise(resolve => setTimeout(resolve, 1000));
@@ -24,4 +26,9 @@ export async function getProducts() {
         { id: 4009, name: "sZdxpuSW", price: 67.61 },
         { id: 4247, name: "uICcSRGT", price: 51.08 },
       ];
+}
+
+export async function createProduct(data: CreateProduct) {
+        //delay de 1 seg
+        await new Promise(resolve => setTimeout(resolve, 1000));
 }
